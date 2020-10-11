@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <LINK REL=StyleSheet HREF="css/principal.css" TYPE="text/css" MEDIA=screen>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <embed src="sounds/startup.mp3" autostart="true" loop="false" volume="80" width="0" height="0">
+
+    <div id="container">
+
+
+        <div class="iconDesktop">
+        <a href="#" value="Mostrar" onclick="mostrarPapelera();"><img src="img/papelera.png" width="50" height="50" alt="Papelera de reciclaje" title="Papelera de reciclaje" />Papelera de reciclaje</a>
+        
+        </div>
+
+        <div class="iconDesktop">
+            <a href="#" value="Mostrar" onclick="mostrarMiPC();"><img src="img/mycomputer.png" width="50" height="50" alt="My computer" title="Mi pc" />Mi pc</a>
+            </div>
+
+            <div class="iconDesktop">
+              <a href="#" value="Mostrar" onclick="mostrarPortafolio();"><img src="img/folder.ico" width="50" height="50" alt="Portfolio" title="Mi portfolio" />Mi portafolio</a>
+              
+              </div>
+            <div class="iconDesktop">
+                <a href="#" value="Mostrar" onclick="mostrarErrorAge();" ><img src="img/aoe-icon.PNG"  onclick="error();" width="50" height="50" alt="My computer" title="Mi pc" />Age of Empires II</a>
+                
+                </div>
+        <nav id="navbar">
+
+
+            <div class="dropdown">
+                <div id="myDropdown" class="dropdown-content">
+                  
+                  <!--Perfil-->
+                  <div id="perfil">
+                  <a href="#" id="user" class="lightMenu" onclick="sobremi();"><img src="img/perfil.JPG" class="perfil" width="40" height="40" alt="About me" title="Perfil" /><span>Constanza</span></a>
+                  </div>
+
+                  <div id="opcion-container">
+                  <!--Menu desplegable - opciones-->
+                  <div id="opcionesMenu">
+                    <a href="#" value="Mostrar" class="lightMenu" onclick="mostrarDocumentos();"><img src="img/folder-m.PNG" class="perfil" width="30" height="30" alt="Folder" title="Mis documentos" />Mis documentos</a>
+                    <a href="#" onclick="mostrarForm();"><img src="img/bloc.JPG" class="perfil" width="30" height="30" alt="Folder" title="Mis documentos" />Formación académica</a>
+                    <a href="#" onclick="mostrarPortafolio();" class="lightMenu"><img src="img/folder-m.PNG" class="perfil" width="30" height="30" alt="Folder" title="Mis documentos" />Mi portafolio</a>
+                    <a href="#" onclick="mostrarExp();"><img src="img/bloc.JPG"  class="perfil" width="30" height="30" alt="Folder" title="Mis documentos" />Experiencia laboral</a>
+                    <a href="#" onclick="mostrarMiPC();" class="lightMenu"><img src="img/mycomputer.png" class="perfil" width="30" height="30" alt="Folder" title="Mis documentos" />Mi PC</a>
+                    <a href="CurriculumVitae-UXUIdesigner-TubioConstanza.pdf" download="CV-TubioConstanza"><img src="img/folder-m.PNG" class="perfil" width="30" height="30" alt="Folder" title="Mis documentos" />Descargar CV en español</a>
+                    <a href="#" onclick="mostrarPapelera();" class="lightMenu" ><img src="img/papelera.png" class="perfil" width="30" height="30" alt="Folder" title="Mis documentos" />Papelera de reciclaje</a>
+                    <a href="CurriculumVitae-UXUIdesigner-TubioConstanza.pdf" download="img/CV-TubioConstanza"><img src="img/folder-m.PNG" class="perfil" width="30" height="30" alt="Folder" title="Mis documentos" />Descargar CV en inglés</a>
+
+
+                    </div>
+                  </div>  <!--fin Menu desplegable - opciones-->
+                  </div>
+                <button onclick="myFunction()" class="drop-button">Inicio</button>
+               
+             </div>
+
+        </nav>
+
+        
+    <div id="documentos" style="display: none;" class="box">
+        <div id="title"> <img src="img/folder.ico" width="20" height="20" alt="folder" title="Mis documentos" /><p>Mis documentos</p><button onclick="mostrarCarpeta();" id="back"> Back</button><button id="close" onclick="ocultarDocumentos();">X</button></div>
+        <aside><div id="tasks">
+           <ul> <p>Tareas</p>  
+           <li> <img src="img/folder-ico2.PNG" width="20" height="20" alt="folder" title="folder" /><a href="#">Archivos de programa</a></li>
+           <li> <img src="img/folder-ico.PNG" width="20" height="20" alt="folder" title="folder" /> <a href="#" onclick="mostrarDocumentos();">Mis documentos</a></li>
+           <li> <img src="img/mipc.PNG" width="20" height="20" alt="folder" title="mipc-ico" /> <a href="#" onclick="deDocumentosaPC();">Mi PC</a></li>
+           <li>  <img src="img/red-ico.PNG" width="20" height="20" alt="folder" title="red" /><a href="#" onclick="mostrarRedes();">Mis sitios de red</a></li>
+
+            </ul>
+        </div></aside>
+  
+
+
+        <section>
+            
+        <div id="redes">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/constanza-tubio/" target=”_blank”><img src="img/pantera.jpg" alt="Ir a LinkedIn" title="Ir a Linkedin" width="150" height="150" /><span>LinkedIn</span></a></li>
+            <li><a href="https://www.behance.net/constanza-tubio" target=”_blank”><img src="img/pantera.jpg" alt="Ir a Behance" title="Ir a Behance" width="150" height="150" /><span>Behance</span></a></li>
+            <li><a  href="https://www.github.com" target=”_blank”><img src="img/pantera.jpg" alt="Ir a GitHub" title="Ir a GitHub" width="150" height="150" /><span>GitHub</span></a></li>
+          </ul>
+        </div>
+           
+ 
+        <ul id="carpeta">
+   
+            <li> <a href="#" onclick="mostrarExp();"><img src="img/bloc.JPG" width="50" height="50" alt="folder" title="folder" />Experiencia laboral</a></li>
+            <li> <a href="#" onclick="mostrarForm();"><img src="img/bloc.JPG" width="50" height="50" alt="folder" title="folder" />Formación académica</a></li>
+            <li> <a href="#" onclick="downloadCV();"><img src="img/cv-mini.JPG" width="50" height="50" alt="folder" title="folder" />CV en inglés para descargar</a></li>
+            <li> <a href="#" onclick="mostrarAboutMe();"><img src="img/folder-m.PNG" width="50" height="50" alt="folder" title="folder" />Sobre mí</a></li>
+            
+        </ul>
+       
+        
+        <div id="aboutme">
+          
+          <img src="img/yo.JPG" width="150" height="230" alt="constanza tubio" title="Hola! Soy Connie" />
+          <img src="img/pantera.jpg" width="180" height="200" alt="constanza tubio" title="Tengo una gata que se llama Pantera <3" />
+          <img src="img/yo2.JPG" width="210" height="150" alt="constanza tubio" title="Hola :3" />
+          <img src="img/ada.gif" width="150" height="220" alt="constanza tubio" title="Pilares" />
+
+        </div>
+        </section>
+    </div>
+
+    <div id="mipc" style="display: none;">
+        <div id="title"> <img src="img/folder.ico" width="20" height="20" alt="folder" title="Mis documentos" /><p>Mi PC</p><button onclick="mostrarDocumentos();" id="back"> Back</button><button onclick="ocultarMiPC();">X</button></div>
+       
+        <section>
+                  <p>Unidades de disco duro (Conocimientos almacenados en mi cerebro!)</p>
+                  
+                  <ul >
+                    <li ><a href="#" onclick="mostrarUXUI();"><img src="img/discolocal.JPG" width="40" height="40" alt="disco local" title="User Experience & User Interface" />Disco local (UX/UI)</a></li>
+                    <li><a href="#" onclick="mostrarProg();"><img src="img/discolocal.JPG" width="40" height="40" alt="disco local" title="Lenguajes de programación y maquetado" />Disco local (Programación)</a></li>
+                    <li><a href="#" onclick="mostrarMetod();"><img src="img/discolocal.JPG" width="40" height="40" alt="disco local" title="Metodologías" />Disco local (Metodologías)</a></li>
+                    <li><a href="#" onclick="mostrarIdiomas();"><img src="img/discolocal.JPG" width="40" height="40" alt="disco local" title="Idiomas" />Disco local (Idiomas)</a></li>
+                    <li><a href="#" onclick="mostrarOtros();"><img src="img/discolocal.JPG" width="40" height="40" alt="disco local" title="Otros conocimientos" />Disco local (Otros)</a></li>
+                  </ul>
+                <div id="discoUXUI">
+                  <h2>Hola!</h2><button onclick="ocultarUXUI();">X</button>
+                  <button onclick="ocultarUXUI();" title="Aceptar">Aceptar</button>
+                </div>
+                <div id="discoProg">
+                  <h2>Hola!</h2><button onclick="ocultarProg();">X</button>
+                  <button onclick="ocultarProg();" title="Aceptar">Aceptar</button>
+                </div>
+                <div id="discoMetod">
+                  <h2>Hola!</h2><button onclick="ocultarMetod();">X</button>
+                  <button onclick="ocultarMetod();" title="Aceptar">Aceptar</button>
+                </div>
+                <div id="discoIdiomas">
+                  <h2>Hola!</h2><button onclick="ocultarIdiomas();">X</button>
+                  <button onclick="ocultarIdiomas();" title="Aceptar">Aceptar</button>
+                </div>
+                <div id="discoOtros">
+                  <h2>Hola!</h2><button onclick="ocultarOtros();">X</button>
+                  <button onclick="ocultarOtros();" title="Aceptar">Aceptar</button>
+                </div>
+
+            
+        </section>
+    </div>
+
+    <div id="portafolio" style="display: none;">
+      <div id="title"> <img src="img/folder.ico" width="20" height="20" alt="folder" title="Mi portfolio" /><p>Mi Portafolio</p><button onclick="ocultarPortafolio();">X</button></div>
+      <aside></aside>
+      <section>
+           
+                
+        <div id="portafolio-content">
+          <ul>
+            <li><a href="#"  ><img src="img/pantera.jpg" alt="Ir a LinkedIn" title="Ir a Linkedin" width="150" height="150" /><span>Landing Page</span></a></li>
+            <li><a href="#" ><img src="img/pantera.jpg" alt="Ir a Gmail" title="Ir a Linkedin" width="150" height="150" /><span>Landing Page Podcast</span></a></li>
+            <li><a href="#" ><img src="img/pantera.jpg" alt="Ir a Behance" title="Ir a Behance" width="150" height="150" /><span>Diseño e ilustración</span></a></li>
+            <li><a href="#" ><img src="img/pantera.jpg" alt="Ir a GitHub" title="Ir a GitHun" width="150" height="150" /><span>Rediseño</span></a></li>
+            <li><a href="#" ><img src="img/pantera.jpg" alt="Ir a LinkedIn" title="Ir a Linkedin" width="150" height="150" /><span>Landing Page</span></a></li>
+            <li><a href="#" ><img src="img/pantera.jpg" alt="Ir a Gmail" title="Ir a Linkedin" width="150" height="150" /><span>Landing Page Podcast</span></a></li>
+            <li><a href="#" ><img src="img/pantera.jpg" alt="Ir a Behance" title="Ir a Behance" width="150" height="150" /><span>Diseño e ilustración</span></a></li>
+            <li><a href="#" ><img src="img/pantera.jpg" alt="Ir a GitHub" title="Ir a GitHun" width="150" height="150" /><span>Rediseño</span></a></li>
+          </ul>
+        </div>
+
+                <!-- PROYECTO DEL PORTAFOLIO-->
+            
+
+          
+      </section>
+  </div>
+
+
+
+
+
+
+    <div id="papelera" style="display: none;">
+        <div id="title"> <img src="img/folder.ico" width="20" height="20" alt="folder" title="Mis documentos" /><p>Papelera de reciclaje</p><button onclick="ocultarPapelera();">X</button></div>
+        <aside></aside>
+        <section>
+
+          <div id="eliminados">
+            <ul>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="final" width="100" height="100" /><span>final.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="11111" width="100" height="100" /><span>11111.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="final2" width="100" height="100" /><span>final2.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="FINAAL" width="100" height="100" /><span>FINAAL.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="final-de-los-finales" width="100" height="100" /><span>final-de-los-finales.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="terminado" width="100" height="100" /><span>terminado.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="okokook" width="100" height="100" /><span>okokook.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="sadadfsdfs" width="100" height="100" /><span>sadadfsdfs.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="222222" width="100" height="100" /><span>222222.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="finaal" width="100" height="100" /><span>finaal.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="final4" width="100" height="100" /><span>final4.ai</span></li>
+              <li><img src="img/illustrator.JPG" alt="Adobe Illustrator" title="NO SE INUNDA MASSSS" width="100" height="100" /><span>NO SE INUNDA MASSSS.ai</span></li>
+            </ul>
+          </div>
+
+        </section>
+    </div>
+
+  <div id="age"  style="display: none;">
+    <div id="title"><p>Error</p><button onclick="ocultarErrorAge();">X</button></div>
+    <aside><img src="img/error.png" width="50" height="50" alt="error" title="Error" />
+      <p> Error al inicializar</p>
+      <audio id="audio" controls>
+        <source type="audio/mp3" src="sounds/error.mp3">
+        </audio>
+    </aside>
+
+  </div>
+
+    </div>
+    <div id="exp">
+      <div id="bloc"><img src="img/note-mini.JPG" width="20" height="20" alt="notepad" />Experiencia Laboral<button onclick="ocultarExp();">X</button></div>
+      <div id="exp-container">
+      <p><strong>2020 – Actualidad – Mentora HTML + CSS</strong> <br>
+        Mentora en Club de Chicas Programadoras
+        http://www.chicasprogramadoras.club/
+        </p>
+
+        <p><strong> 2020 – Actualidad - Desarrolladora FrontEnd - Diseñadora UI / UX Ssr Independiente</strong><br>
+          <em>Freelance</em>
+          <br><br>  Tecnologías: HTML5, CSS3, Javascript, GITHUB, JSON, DESIGN RESPONSIVE. HEROKU, Filezilla, SASS, Bootstrap. Diseñar y maquetación páginas web creativas en HTML y Wordpress, con foto en venta. 
+          Diseño y maquetación de landings de pauta. Mantenimiento, mejoras y actualizaciones de los sitios de la empresa.
+          Diseño y maquetado de htmls para envíos de emails corporativos. Manejo avanzado de Adobe Creative Cloude. Prototipos, Wireframes. Ilustraciones.
+          </p>
+
+        <p><strong>2019 – Actualidad - Applications Services Field Operations Trainee Tibco</strong><br>
+            <em>DXC Technology / Experis</em>
+            <br><br>
+            SOA
+            Modelado de procesos
+            XML, XPATH (SOAP UI)
+            Web service 
+            Adaptadores (base de datos y archivos)
+            Documentación de procedimientos, AMS, redacción de instructivos
+            Generación de Scopes y Estimaciones de requerimientos
+        </p>
+
+            <p><strong>2019 – Help Desk / Administradora JIRA - Confluence </strong><br>
+              <em> Experta Seguros / Asap Consulting </em>
+              <br><br>
+              
+              Clasificación de problemática y derivación a sector correspondiente
+              Asistencia remota a usuarios internos 
+              Asistencia técnica telefónica y seguimiento de tickets
+              Administración de Confluence y Jira(Permisos/Accesos, Manejo básico de JQL)
+              Redacción de instructivos para usuarios finales 
+              Configuración de VPN, soporte y resolución de incidencias con conexiones
+              Manejo de Cisco Jabber
+              Conocimientos en áreas: Wintel, Unix, Redes y Soporte On Site.
+              </p>
+
+              <p><strong>2017 – 2018 - Pasantía en Desarrollo FrontEnd </strong><br>
+                <em>Lagash Systems</em>
+                <br><br>
+                Entorno de trabajo Visual Studio Code
+                Participación y colaboración en proyectos utilizando:
+                Lenguaje C#
+                ASP.NET MVC Framework
+                Github
+                Conocimientos en SCRUM
+                </p>
+
+                <p><strong>2016 - 2017 - Analista funcional</strong><br>
+                  <em>Huenei IT Services</em>
+                  <br><br>
+                  Desempeñando las tareas principales en: 
+                  Especificación en caso de uso (user stories) 
+                  Soporte funcional 
+                  Metodología SCRUM 
+                  Casos de prueba y testing – Web services
+                  Realización de prototipos de pantalla utilizando Photoshop
+                  Referencias laborales: 4106-3511 Laura Sergio.
+                  
+                  </p>
+
+                  <p><strong>2014 – 2016 - Analista en incidentes</strong><br>
+                    <em>Connectis ICT Services</em>
+                      <br><br>
+                    Desempeñando tareas en: 
+                    Análisis, gestión y resolución de incidentes. 
+                    Herramienta de gestion de tickets: REMEDY
+                    Gestión orientada al cliente y normas de calidad. 
+                    Identificación, análisis y reporte de incidentes críticos y/o masivos. 
+                    Documentación de procesos y procedimiento de resolución de incidencias. 
+                    Atención circuito telefónico. 
+                    Ejecución y cumplimiento de políticas y métricas de calidad. 
+                    Consultas en SQL 
+                    Atención de consultas de Usuarios 
+                    Uso de herramienta de gestión de incidencias 
+                    Experiencia en Service Desk
+                    <br><br><br>
+                    </p>
+                  </div>
+    </div>
+
+    <div id="formacion">
+      <div id="bloc"><img src="img/note-mini.JPG" width="20" height="20" alt="notepad" />Formación académica<button onclick="ocultarForm();">X</button></div>
+     
+    
+      <div id="formacion-container">
+        <br><strong>2020 – En curso</strong> – Design Thinking for Innovation – <em>Universidad de Virginia (Coursera)</em><br><br>
+
+        <strong>2020 – En curso</strong> – Profesorado en Artes Visuales – <em>Escuela de Educación Artística Manuel Belgrano</em><br><br>
+
+        <strong>2020 – En curso</strong> – UI/UX Career - <em>Coderhouse</em><br><br>
+
+        <strong>2019</strong> – Full Stack Web Development Career – <em>Acámica / Becas Globant</em> <br><br>
+
+       <strong> 2019</strong> – Curso Ilustración Illustrator + Photoshop – <em>Platzi</em><br><br>
+
+        <strong>2015</strong> – Tecnicatura en Programación Informática – <em>Universidad Tecnológica Nacional</em><br><br>
+        <strong>2013</strong> - Curso de Programación Web (PHP / MySQL) - <em>Centro de Formación Profesional 401 Santo Tomas</em> <br><br>
+        <strong>2012</strong> - Curso de Diseño web y Photoshop (HTML / CSS) - <em>Centro de Formación Profesional 401 Santo Tomas</em> <br><br>
+
+        <strong>2012</strong> - Bachiller en Artes Visuales - <em>Escuela de Educación Media N° 1 “Esteban Echeverría. Hurlingham, Buenos Aires. (Analítico disponible)</em> <br>
+        
+
+        </div>
+    </div>
+
+
+    <div id="sobremi" style="display: none;">
+      <div id="title"> <img src="img/folder.ico" width="20" height="20" alt="folder" title="Mis documentos" /><p>Un poco sobre mí...</p><button onclick="ocultarSobremi();">X</button></div>
+      <aside><div id="tareas">
+        <ul> <p>Tareas</p>  
+        <li> <img src="img/folder-ico2.PNG" width="20" height="20" alt="folder" title="folder" /><a href="#">Archivos de programa</a></li>
+        <li> <img src="img/folder-ico.PNG" width="20" height="20" alt="folder" title="folder" /> <a href="#" onclick="mostrarDocumentos();">Mis documentos</a></li>
+        <li> <img src="img/mipc.PNG" width="20" height="20" alt="folder" title="mipc-ico" /> <a href="#" onclick="deDocumentosaPC();">Mi PC</a></li>
+        <li>  <img src="img/red-ico.PNG" width="20" height="20" alt="folder" title="red" /><a href="#" onclick="mostrarRedes();">Mis sitios de red</a></li>
+
+         </ul>
+     </div></aside>
+      <section>
+
+        <div>
+          
+          <img src="img/yo.JPG" width="150" height="230" alt="constanza tubio" title="Hola! Soy Connie" />
+          <img src="img/pantera.jpg" width="180" height="200" alt="constanza tubio" title="Tengo una gata que se llama Pantera <3" />
+          <img src="img/yo2.JPG" width="210" height="150" alt="constanza tubio" title="Hola :3" />
+          <img src="img/ada.gif" width="150" height="220" alt="constanza tubio" title="Pilares" />
+          <img src="img/pintura.JPG" width="400" height="380" alt="constanza tubio" title="Mis pinturas!" />
+          <img src="img/panterin.JPG" width="200" height="200" alt="constanza tubio" title="Pantera Sama" />
+          <img src="img/guitar.JPG" width="200" height="200" alt="constanza tubio" title="Empieza el ritual... &#13" />
+
+        </div>
+
+      </section>
+  </div>
+
+
+
+    <script src="scripts/main.js"></script>
+ 
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+ul{
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-image:url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+a{
+    text-decoration: none;
+}
+#navbar{
+    width:100%;
+    height:40px;
+    background: linear-gradient(0deg, rgba(28,56,130,1) 0%, rgba(50,95,210,1) 86%, rgba(105,157,238,1) 100%);    position:fixed;
+    bottom:0px;
+    font-family: 'Tahoma', sans-serif;
+}
+#navbar .drop-button{
+    width:300%;
+    height:40px;
+    background-color:green;
+    color:white;
+    font-size: 1.1em;
+    font-style: italic;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+
+}
+  /*Botón hover y focus*/
+  .drop-button:hover, drop-buttton:hover{
+    background-color: #2EABAB;
+  }
+  
+  /*Posición del contenedor*/
+  .dropdown{
+    position: relative;
+    display: inline-block;
+    
+   }
+  
+  /*submenu*/
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:-400px;
+    background-color:rgba(50,95,210,1);
+    border-radius:10px;
+    color:black;
+    height:400px;
+    width:500px;
+  }
+  
+  .dropdown-content a{
+    color: black;
+    padding: 5px 5px;
+    display: block;
+    width:47%;
+    margin-left:1%;
+    float:left;
+    background-color:#d6def7;
+
+  }
+  #user{
+      display: inline-block;
+      width:400px;
+}
+  
+  .dropdown-content a:hover{
+    background-color: #f1f1f1;
+  }
+  .show {
+    display: block;
+  }
+.iconDesktop{
+    text-align: center;
+    height:100px;
+    width:80px;
+    margin:1%;
+    color:white;
+}
+
+.iconDesktop a{
+    color:white;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    font-family: Tahoma; 
+    font-size: 14px;    
+}
+
+#documentos, #mipc, #papelera, #portafolio,#sobremi{
+    width:80%;
+    height:500px;
+    background-color:#245cda;
+    display: block;
+    margin:0 auto;
+    margin-top:-450px;
+    border-radius:10px;
+
+
+}
+#documentos aside, #papelera aside, #portafolio aside, #sobremi aside{
+    width:250px;
+    height:450px;
+    background-color:#739be5;
+    margin-left:0.5%;
+    margin-top:0.5%;
+    border-radius:5px;
+    padding-top:5px;
+
+}
+#title{
+    width:100%;
+    border-radius:5px;
+
+    height:30px;
+    background-color:#245cda;
+}
+#title img{
+    margin:3px;
+}
+#title p{
+   margin-top:-25px;
+   margin-left:30px;
+   width:200px;
+   color:white;
+   font-family: Tahoma; 
+
+   text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+
+}
+#title button{
+    margin-top:-20px;
+    float: right;
+}
+#title button#back{
+    margin-left:-30px;
+}
+#age{
+    width:300px;
+    height:200px;
+    margin:0 auto;
+    margin-top:-150px;
+    background: linear-gradient(108deg, rgba(12,86,213,1) 0%, rgba(50,95,210,1) 19%, rgba(105,157,238,1) 56%, rgba(12,86,213,1) 96%);
+}
+#age aside{
+    height:160px;
+    background-color:#dcd9d4;
+    width:290px;
+    margin:0 auto;
+    
+}
+#age aside p{
+    width:70%;
+    margin-top:-35px;
+    margin-left:90px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+}
+#age img{
+    margin-top:50px;
+    margin-left:30px;
+}
+#audio{
+    display: none
+    }
+
+section{
+    width:732px;
+    height:460px;
+    background-color:#ffffff;
+    margin-top:-456px;
+    float:right;
+    margin-right:4px;
+   padding-left:27px;
+    overflow-y:scroll;
+   
+
+}
+section p{
+    width:50%;margin-top:5%;
+}
+#tasks, #tareas {
+    background-color:#d6def7;
+    margin:3%;
+    height:150px;
+    border-radius:5px;
+    margin-top:3%;
+
+}
+aside ul{
+    list-style: none;
+}
+aside li{
+    padding:3px;
+
+}
+aside li a{
+    font-family: 'Tahoma', sans-serif;
+    color:#245cda;
+    font-size:13px ;
+    
+}
+aside li a:hover{
+    border-bottom:1px solid #245cda;
+}
+aside img{
+   margin-right:5px;
+
+}
+aside p{
+    width:97%;
+    background-color:#dee8fa;
+    border-radius:3px;
+    padding-left:5px;
+    padding-top:3px;
+    padding-bottom:3px;
+    color:#245cda;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+#mipc section{
+    margin-top:1px;
+    width:96.5%;
+}
+#mipc section p{
+    text-decoration: underline;
+}
+
+#mipc ul{
+    float: left;
+    width:80%;
+    margin-top:20px;
+}
+#mipc ul li{
+    float: left;
+    width:40%;
+    margin-left:20px;
+    margin-top:10px;
+
+}
+#mipc ul img{
+    margin-right:10px;
+}
+#mipc ul li span{
+ 
+    background:pink;
+}
+/******** DISCOS **********/
+#discoUXUI,#discoProg,#discoMetod,#discoIdiomas,#discoOtros{
+    display: none;
+    width:400px;
+    height:400px;
+    background-color:gray;
+    position: absolute;
+    border-radius:10px;
+
+}
+#discoUXUI h2{
+    background:green;
+}
+/*****************************/
+
+#exp,#formacion{
+    display: none;
+    width:800px;
+    height:495px;
+    background-color:whitesmoke;
+    position: absolute;
+    overflow-y:scroll;
+    margin-top: -450px;
+    margin-left:300px;
+ 
+}
+#exp-container,#formacion-container{
+    padding:4%;
+}
+#exp-container p{
+    width:100%;
+   
+}
+#aboutme{
+    display:none;
+    
+}
+#bloc{
+    width:100%;
+    position: absolute;
+   
+}
+#bloc button{
+    float:right;
+    
+}
+#redes{
+    display: none;
+    margin-top:10px;
+}
+#redes ul,#eliminados ul,#portafolio-content ul{
+    float:left;
+  
+    
+}
+#redes ul li,#portafolio-content ul li{
+    width:150px;
+    height:160px;
+    float:left;
+    text-align: center;
+    margin-left:10px;
+
+}
+#redes span{
+    margin-left:20px;
+}
+#portafolio-content span{
+ 
+    margin-left:50px;
+}
+#eliminados ul li{
+    width:100px;
+    height:110px;
+    float:left;
+    margin-left:10px;
+    margin-top:35px;
+    text-align: center;
+}
+#eliminados span{
+    margin-left:15px;
+}
+#portafolio-content ul li{
+    margin-top:40px;
+}
+#portafolio-content ul li img:hover, #aboutme img:hover, #redes img:hover{
+    box-shadow:1px 1px 1px 1px black;
+}
+#portafolio-content span{
+    margin-left:10px;
+}
+#opcionesMenu .lightMenu{
+    background-color:whitesmoke;
+}
+.perfil{
+    border-radius:3px;
+    margin:1%;
+    padding-top:10px;
+}
+#perfil a{
+    width:90%;
+   
+    background-color:#245cda;
+    font-weight: bold;
+}
+#opcion-container{
+    background-color:whitesmoke;
+    width:100%;
+    height:260px;
+    margin-top:100px;
+
+}
